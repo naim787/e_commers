@@ -1,0 +1,13 @@
+    {{ template "header.html" }}
+    <div class="w-[100vw] h-[100vh] bg-red-500">
+      
+      <nav class="w-[100vw] h-20 bg-white flex items-center justify-evenly border shadow shadow-2xl">
+        <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+      <form action="/search" method="get" accept-charset="utf-8" class="w-auto h-11 border rounded-md p-1 flex items-center bg-gray-300">
+        <input class="w-72 h-10 rounded-md outline-0 p-1 bg-transparent" type="search" name="srch" id="inputHome" value="{{ .Nama }}" placeholder="search" />
+        <button type="submit"><i class="fas fa-search bg-blue-500 p-2 rounded-full"></i></button>
+      </form>
+    </nav>
+      
+    </div>
+  {{ template "header.html" }}

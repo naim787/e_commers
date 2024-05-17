@@ -1,0 +1,27 @@
+     
+     {{ template "header.html" }}
+    
+    <div class="w-[100vw] h-[100vh] bg-white flex flex-col items-center p-2">
+      <div class="w-full flex items-center">
+       <a href="/"><i class="fa-solid fa-arrow-left text-3xl"></i> <span class="font-thin">Keluar</span></a>
+      </div>
+      
+      <div class="w-[80vw] mt-[10vh] text-5xl font-bold inline-block">Ferifikasi</div>
+      
+      <form class="w-[80vw] h-[25vh] border rounded-xl shadow shadow-2xl flex flex-col justify-evenly items-center p-2" action="/verify" method="get" accept-charset="utf-8">
+        <div class="w-auto h-12 border rounded-md p-1 flex items-center">
+        <input class="w-72 h-10 rounded-md outline-0 p-1" type="number" name="Code" id="" value="" placeholder="code verivikasi" />
+        </div>
+        <div class="w-72">
+          <button class="py-2 px-5 bg-blue-500 text-white rounded-xl" type="submit">Buat</button>
+        </div>
+      </form>
+      
+      
+      <div class="w-[80vw]">
+        <p>iggin bantuan? <a class="text-blue-500" href="">Hubugi Kami</a></p>
+      </div>
+      
+    </div>
+    
+    {{ template "footer.html" }}

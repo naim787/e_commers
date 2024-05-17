@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "Name": "naim",
+      "Email": "naimmmmab@gmail.com",
+      "Password": "123",
+      "Id": 298087,
+      "Status": "admin"
+    },
+    {
+      "Name": "8080",
+      "Email": "naimmmmab@gmail.com",
+      "Password": "1425367",
+      "Id": 920399,
+      "Status": "user"
+    }
+  ],
+  "Product": [
+    {
+      "Product_Name": "Kalsulo Tenwu",
+      "Product_Id": 123466,
+      "Product_Bran": "NIKE",
+      "Product_Price": 19000,
+      "Product_Descripsi": "STRING"
+    }
+  ]
+}

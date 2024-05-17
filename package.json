@@ -1,0 +1,17 @@
+{
+  "name": "e_commers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ../Public/css/INecommers.css -o ../Public/css/OUecommers.css --watch",
+    "dev" : "go run main.go & npx tailwindcss -i ../Public/css/INecommers.css -o ../Public/css/OUecommers.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

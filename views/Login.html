@@ -1,0 +1,38 @@
+
+    {{ template "header.html" }}
+    
+    <div class="w-[100vw] h-[100vh] bg-white flex flex-col items-center p-2">
+      <div class="w-full flex items-center">
+       <a href="/"><i class="fa-solid fa-arrow-left text-3xl"></i> <span class="font-thin">Keluar</span></a>
+      </div>
+      
+      <div class="w-[80vw] mt-[10vh] text-5xl font-bold inline-block">Login</div>
+      
+      
+      {{if . }}
+         <h1 class="inline-block text-red-500">{{.}}</h1>
+      {{ end }}
+      <form class="w-[80vw] h-[30vh] border rounded-xl shadow shadow-2xl flex flex-col justify-evenly items-center p-2" action="/loginakun" method="get" accept-charset="utf-8">
+        <div class="w-auto h-11 border rounded-md p-1 flex items-center">
+        <input class="w-72 h-10 rounded-md outline-0 p-1" type="email" name="email" id="" value="" placeholder="email / nohp" />
+        </div>
+        <div class="w-auto h-11 border rounded-md p-1 flex items-center justify-between relative">
+        <input class="w-72 h-10 rounded-md outline-0 p-1" type="text" name="password" id="" value="" placeholder="password" />
+        <i class="fas fa-eye absolute right-0 right-5"></i>
+        </div>
+        <div class="w-72">
+          <button class="py-2 px-5 bg-blue-500 text-white rounded-xl" type="submit">Masuk</button>
+        </div>
+        <div class="w-72 flex flex-col">
+          <a class="text-blue-500" href="">• Lupa Sandi?</a>
+          <a class="text-blue-500" href="/create">• buat akun</a>
+        </div>
+      </form>
+      
+      <div class="w-[80vw]">
+        <p>iggin bantuan? <a class="text-blue-500" href="">Hubugi Kami</a></p>
+      </div>
+      
+    </div>
+    
+    {{ template "footer.html" }}
